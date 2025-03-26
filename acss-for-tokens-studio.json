@@ -1,0 +1,51 @@
+{
+  "ACSS Defaults": {
+    "Font Family": {
+      "Heading": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Neue Augenblick"
+        }
+      },
+      "Body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Neue Augenblick"
+        }
+      }
+    },
+    "Settings": {
+      "Color": {
+        "Primary": {
+          "H": {
+            "$type": "other",
+            "$value": "19"
+          },
+          "S": {
+            "$type": "other",
+            "$value": "100%"
+          },
+          "L": {
+            "$type": "other",
+            "$value": "50%"
+          },
+          "A": {
+            "$type": "other",
+            "$value": "1"
+          }
+        }
+      }
+    },
+    "Primary": {
+      "$type": "color",
+      "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},{Settings.Color.Primary.L},{Settings.Color.Primary.A})",
+      "$description": "The brand’s primary color (The main identifying brand color – also often the action color)."
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "ACSS Defaults"
+    ]
+  }
+}
