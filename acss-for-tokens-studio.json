@@ -1,19 +1,5 @@
 {
   "ACSS Defaults": {
-    "Font Family": {
-      "Heading": {
-        "$type": "typography",
-        "$value": {
-          "fontFamily": "Neue Augenblick"
-        }
-      },
-      "Body": {
-        "$type": "typography",
-        "$value": {
-          "fontFamily": "Neue Augenblick"
-        }
-      }
-    },
     "Settings": {
       "Color": {
         "Primary": {
@@ -196,6 +182,38 @@
               "$type": "other",
               "$value": "1"
             }
+          }
+        }
+      },
+      "Tipography": {
+        "Heading": {
+          "Font Family": {
+            "$type": "other",
+            "$value": "Neue Augenblick"
+          },
+          "Base Heading Size (Mobile)": {
+            "$type": "other",
+            "$value": "16",
+            "$description": "IMPORTANT: Insert unitless value."
+          },
+          "Base Heading Size (Desktop)": {
+            "$type": "other",
+            "$value": "18",
+            "$description": "IMPORTANT: Insert unitless value."
+          },
+          "Type Scale (Mobile)": {
+            "$type": "other",
+            "$value": "1.2"
+          },
+          "Type Scale (Desktop)": {
+            "$type": "other",
+            "$value": "1.333"
+          }
+        },
+        "Body": {
+          "Font Family": {
+            "$type": "other",
+            "$value": "Neue Augenblick"
           }
         }
       }
@@ -550,6 +568,61 @@
           "$type": "color",
           "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},50%,{Settings.Color.Semantic.Danger.A})"
         }
+      }
+    },
+    "Headings": {
+      "H1 (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.Base Size (Desktop)} *{Settings.Tipography.Heading.Type Scale (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}rem"
+        }
+      },
+      "H2 (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.Base Size (Desktop)} *{Settings.Tipography.Heading.Type Scale (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}rem"
+        }
+      },
+      "H3 (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.Base Size (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}rem"
+        }
+      },
+      "H4 (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.Base Size (Desktop)}rem"
+        }
+      },
+      "H5 (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.Base Size (Desktop)} / {Settings.Tipography.Heading.Type Scale (Desktop)}"
+        }
+      },
+      "H6 (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Settings.Tipography.Heading.Font Family"
+        }
+      }
+    },
+    "Heading": {
+      "Base Size (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Heading.Base Heading Size (Mobile)}/16",
+        "$description": "This token is only used for rem conversion"
+      },
+      "Base Size (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Heading.Base Heading Size (Desktop)}/16",
+        "$description": "This token is only used for rem conversion"
       }
     }
   },
