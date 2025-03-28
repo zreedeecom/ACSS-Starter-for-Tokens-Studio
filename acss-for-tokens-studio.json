@@ -239,7 +239,7 @@
       "Main": {
         "$type": "color",
         "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},{Settings.Color.Secondary.L},{Settings.Color.Secondary.A})",
-        "$description": "The brand’s Secondary color (The main identifying brand color – also often the action color)."
+        "$description": "The brand’s second most used color."
       },
       "Ultra-light": {
         "$type": "color",
@@ -274,7 +274,7 @@
       "Main": {
         "$type": "color",
         "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},{Settings.Color.Tertiary.L},{Settings.Color.Tertiary.A})",
-        "$description": "The brand’s Tertiary color (The main identifying brand color – also often the action color)."
+        "$description": "The brand’s third most used color."
       },
       "Ultra-light": {
         "$type": "color",
@@ -309,7 +309,7 @@
       "Main": {
         "$type": "color",
         "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},{Settings.Color.Accent.L},{Settings.Color.Accent.A})",
-        "$description": "The brand’s Accent color (The main identifying brand color – also often the action color)."
+        "$description": "The brand’s least used color."
       },
       "Ultra-light": {
         "$type": "color",
@@ -344,7 +344,7 @@
       "Main": {
         "$type": "color",
         "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},{Settings.Color.Base.L},{Settings.Color.Base.A})",
-        "$description": "The brand’s Base color (The main identifying brand color – also often the action color)."
+        "$description": "The brand’s base color (typically best if a dark version of the base is chosen) – most commonly used for backgrounds and text."
       },
       "Ultra-light": {
         "$type": "color",
@@ -379,7 +379,7 @@
       "Main": {
         "$type": "color",
         "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},{Settings.Color.Neutral.L},{Settings.Color.Neutral.A})",
-        "$description": "The brand’s Neutral color (The main identifying brand color – also often the action color)."
+        "$description": "Black and white, plus shades of grey."
       },
       "Ultra-light": {
         "$type": "color",
