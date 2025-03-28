@@ -123,43 +123,433 @@
             "$type": "other",
             "$value": "1"
           }
+        },
+        "Semantic": {
+          "Success": {
+            "H": {
+              "$type": "other",
+              "$value": "142"
+            },
+            "S": {
+              "$type": "other",
+              "$value": "77%"
+            },
+            "L": {
+              "$type": "other",
+              "$value": "73%"
+            },
+            "A": {
+              "$type": "other",
+              "$value": "1"
+            }
+          },
+          "Warning": {
+            "H": {
+              "$type": "other",
+              "$value": "50"
+            },
+            "S": {
+              "$type": "other",
+              "$value": "98%"
+            },
+            "L": {
+              "$type": "other",
+              "$value": "64%"
+            },
+            "A": {
+              "$type": "other",
+              "$value": "1"
+            }
+          },
+          "Info": {
+            "H": {
+              "$type": "other",
+              "$value": "273"
+            },
+            "S": {
+              "$type": "other",
+              "$value": "100%"
+            },
+            "L": {
+              "$type": "other",
+              "$value": "91%"
+            },
+            "A": {
+              "$type": "other",
+              "$value": "1"
+            }
+          },
+          "Danger": {
+            "H": {
+              "$type": "other",
+              "$value": "0"
+            },
+            "S": {
+              "$type": "other",
+              "$value": "72%"
+            },
+            "L": {
+              "$type": "other",
+              "$value": "51%"
+            },
+            "A": {
+              "$type": "other",
+              "$value": "1"
+            }
+          }
         }
       }
     },
     "Primary": {
-      "$type": "color",
-      "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},{Settings.Color.Primary.L},{Settings.Color.Primary.A})",
-      "$description": "The brand’s primary color (The main identifying brand color – also often the action color)."
-    },
-    "Secondary": {
-      "$type": "color",
-      "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},{Settings.Color.Secondary.L},{Settings.Color.Secondary.A})",
-      "$description": "The brand’s second most used color."
-    },
-    "Tertiary": {
-      "$type": "color",
-      "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},{Settings.Color.Tertiary.L},{Settings.Color.Tertiary.A})",
-      "$description": "The brand’s third most used color."
-    },
-    "Accent": {
-      "$type": "color",
-      "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},{Settings.Color.Accent.L},{Settings.Color.Accent.A})",
-      "$description": "The brand’s least used color."
-    },
-    "Base": {
-      "$type": "color",
-      "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},{Settings.Color.Base.L},{Settings.Color.Base.A})",
-      "$description": "The brand’s base color (typically best if a dark version of the base is chosen) – most commonly used for backgrounds and text."
-    },
-    "Neutral": {
-      "$type": "color",
-      "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},{Settings.Color.Neutral.L},{Settings.Color.Neutral.A})",
-      "$description": "Black and white, plus shades of grey."
-    },
-    "Other": {
       "Main": {
         "$type": "color",
-        "$value": "#ade3f6"
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},{Settings.Color.Primary.L},{Settings.Color.Primary.A})",
+        "$description": "The brand’s primary color (The main identifying brand color – also often the action color)."
+      },
+      "Ultra-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},95%,{Settings.Color.Primary.A})"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},85%,{Settings.Color.Primary.A})"
+      },
+      "Semi-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},65%,{Settings.Color.Primary.A})"
+      },
+      "Semi-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},35%,{Settings.Color.Primary.A})"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},25%,{Settings.Color.Primary.A})"
+      },
+      "Ultra-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},10%,{Settings.Color.Primary.A})"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Primary.H},{Settings.Color.Primary.S},50%,{Settings.Color.Primary.A})"
+      }
+    },
+    "Secondary": {
+      "Main": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},{Settings.Color.Secondary.L},{Settings.Color.Secondary.A})",
+        "$description": "The brand’s Secondary color (The main identifying brand color – also often the action color)."
+      },
+      "Ultra-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},95%,{Settings.Color.Secondary.A})"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},85%,{Settings.Color.Secondary.A})"
+      },
+      "Semi-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},65%,{Settings.Color.Secondary.A})"
+      },
+      "Semi-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},35%,{Settings.Color.Secondary.A})"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},25%,{Settings.Color.Secondary.A})"
+      },
+      "Ultra-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},10%,{Settings.Color.Secondary.A})"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Secondary.H},{Settings.Color.Secondary.S},50%,{Settings.Color.Secondary.A})"
+      }
+    },
+    "Tertiary": {
+      "Main": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},{Settings.Color.Tertiary.L},{Settings.Color.Tertiary.A})",
+        "$description": "The brand’s Tertiary color (The main identifying brand color – also often the action color)."
+      },
+      "Ultra-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},95%,{Settings.Color.Tertiary.A})"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},85%,{Settings.Color.Tertiary.A})"
+      },
+      "Semi-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},65%,{Settings.Color.Tertiary.A})"
+      },
+      "Semi-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},35%,{Settings.Color.Tertiary.A})"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},25%,{Settings.Color.Tertiary.A})"
+      },
+      "Ultra-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},10%,{Settings.Color.Tertiary.A})"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Tertiary.H},{Settings.Color.Tertiary.S},50%,{Settings.Color.Tertiary.A})"
+      }
+    },
+    "Accent": {
+      "Main": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},{Settings.Color.Accent.L},{Settings.Color.Accent.A})",
+        "$description": "The brand’s Accent color (The main identifying brand color – also often the action color)."
+      },
+      "Ultra-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},95%,{Settings.Color.Accent.A})"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},85%,{Settings.Color.Accent.A})"
+      },
+      "Semi-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},65%,{Settings.Color.Accent.A})"
+      },
+      "Semi-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},35%,{Settings.Color.Accent.A})"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},25%,{Settings.Color.Accent.A})"
+      },
+      "Ultra-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},10%,{Settings.Color.Accent.A})"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Accent.H},{Settings.Color.Accent.S},50%,{Settings.Color.Accent.A})"
+      }
+    },
+    "Base": {
+      "Main": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},{Settings.Color.Base.L},{Settings.Color.Base.A})",
+        "$description": "The brand’s Base color (The main identifying brand color – also often the action color)."
+      },
+      "Ultra-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},95%,{Settings.Color.Base.A})"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},85%,{Settings.Color.Base.A})"
+      },
+      "Semi-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},65%,{Settings.Color.Base.A})"
+      },
+      "Semi-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},35%,{Settings.Color.Base.A})"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},25%,{Settings.Color.Base.A})"
+      },
+      "Ultra-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},10%,{Settings.Color.Base.A})"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Base.H},{Settings.Color.Base.S},50%,{Settings.Color.Base.A})"
+      }
+    },
+    "Neutral": {
+      "Main": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},{Settings.Color.Neutral.L},{Settings.Color.Neutral.A})",
+        "$description": "The brand’s Neutral color (The main identifying brand color – also often the action color)."
+      },
+      "Ultra-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},95%,{Settings.Color.Neutral.A})"
+      },
+      "Light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},85%,{Settings.Color.Neutral.A})"
+      },
+      "Semi-light": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},65%,{Settings.Color.Neutral.A})"
+      },
+      "Semi-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},35%,{Settings.Color.Neutral.A})"
+      },
+      "Dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},25%,{Settings.Color.Neutral.A})"
+      },
+      "Ultra-dark": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},10%,{Settings.Color.Neutral.A})"
+      },
+      "Hover": {
+        "$type": "color",
+        "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},50%,{Settings.Color.Neutral.A})"
+      }
+    },
+    "Semantic": {
+      "Success": {
+        "Main": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},{Settings.Color.Semantic.Success.L},{Settings.Color.Semantic.Success.A})",
+          "$description": "The brand’s Semantic.Success color (The main identifying brand color – also often the action color)."
+        },
+        "Ultra-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},95%,{Settings.Color.Semantic.Success.A})"
+        },
+        "Light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},85%,{Settings.Color.Semantic.Success.A})"
+        },
+        "Semi-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},65%,{Settings.Color.Semantic.Success.A})"
+        },
+        "Semi-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},35%,{Settings.Color.Semantic.Success.A})"
+        },
+        "Dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},25%,{Settings.Color.Semantic.Success.A})"
+        },
+        "Ultra-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},10%,{Settings.Color.Semantic.Success.A})"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Success.H},{Settings.Color.Semantic.Success.S},50%,{Settings.Color.Semantic.Success.A})"
+        }
+      },
+      "Warning": {
+        "Main": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},{Settings.Color.Semantic.Warning.L},{Settings.Color.Semantic.Warning.A})",
+          "$description": "The brand’s Semantic.Warning color (The main identifying brand color – also often the action color)."
+        },
+        "Ultra-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},95%,{Settings.Color.Semantic.Warning.A})"
+        },
+        "Light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},85%,{Settings.Color.Semantic.Warning.A})"
+        },
+        "Semi-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},65%,{Settings.Color.Semantic.Warning.A})"
+        },
+        "Semi-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},35%,{Settings.Color.Semantic.Warning.A})"
+        },
+        "Dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},25%,{Settings.Color.Semantic.Warning.A})"
+        },
+        "Ultra-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},10%,{Settings.Color.Semantic.Warning.A})"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Warning.H},{Settings.Color.Semantic.Warning.S},50%,{Settings.Color.Semantic.Warning.A})"
+        }
+      },
+      "Info": {
+        "Main": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},{Settings.Color.Semantic.Info.L},{Settings.Color.Semantic.Info.A})",
+          "$description": "The brand’s Semantic.Info color (The main identifying brand color – also often the action color)."
+        },
+        "Ultra-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},95%,{Settings.Color.Semantic.Info.A})"
+        },
+        "Light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},85%,{Settings.Color.Semantic.Info.A})"
+        },
+        "Semi-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},65%,{Settings.Color.Semantic.Info.A})"
+        },
+        "Semi-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},35%,{Settings.Color.Semantic.Info.A})"
+        },
+        "Dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},25%,{Settings.Color.Semantic.Info.A})"
+        },
+        "Ultra-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},10%,{Settings.Color.Semantic.Info.A})"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Info.H},{Settings.Color.Semantic.Info.S},50%,{Settings.Color.Semantic.Info.A})"
+        }
+      },
+      "Danger": {
+        "Main": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},{Settings.Color.Semantic.Danger.L},{Settings.Color.Semantic.Danger.A})",
+          "$description": "The brand’s Semantic.Danger color (The main identifying brand color – also often the action color)."
+        },
+        "Ultra-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},95%,{Settings.Color.Semantic.Danger.A})"
+        },
+        "Light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},85%,{Settings.Color.Semantic.Danger.A})"
+        },
+        "Semi-light": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},65%,{Settings.Color.Semantic.Danger.A})"
+        },
+        "Semi-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},35%,{Settings.Color.Semantic.Danger.A})"
+        },
+        "Dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},25%,{Settings.Color.Semantic.Danger.A})"
+        },
+        "Ultra-dark": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},10%,{Settings.Color.Semantic.Danger.A})"
+        },
+        "Hover": {
+          "$type": "color",
+          "$value": "hsla({Settings.Color.Semantic.Danger.H},{Settings.Color.Semantic.Danger.S},50%,{Settings.Color.Semantic.Danger.A})"
+        }
       }
     }
   },
