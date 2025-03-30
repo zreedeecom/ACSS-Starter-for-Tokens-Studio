@@ -208,13 +208,43 @@
           "Type Scale (Desktop)": {
             "$type": "other",
             "$value": "1.333"
+          },
+          "x-height (Mobile)": {
+            "$type": "other",
+            "$value": "8.1485",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile font size (16px)"
+          },
+          "x-height-calc (Mobile)": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading.x-height (Mobile)} * 2 +4",
+            "$description": "This token mimics the calculation set on your ACSS Settings"
+          },
+          "x-height (Desktop)": {
+            "$type": "other",
+            "$value": "9.1670",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base desktop font size (18px)"
+          },
+          "x-height-calc (Desktop)": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading.x-height (Desktop)} * 2 +4",
+            "$description": "This token mimics the calculation set on your ACSS Settings"
           }
         },
         "Body": {
           "Font Family": {
             "$type": "other",
             "$value": "Neue Augenblick"
+          },
+          "x-height": {
+            "$type": "other",
+            "$value": "8.1485",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible."
           }
+        },
+        "x-height": {
+          "$type": "other",
+          "$value": "8.1485",
+          "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile font size (16px)"
         }
       }
     },
@@ -575,41 +605,43 @@
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)} *{Settings.Tipography.Heading.Type Scale (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}rem"
+          "fontSize": "{Heading.H1 (Desktop)} rem",
+          "lineHeight": "{Heading.LH H1 (Desktop)}"
         }
       },
       "H2 (Desktop)": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)} *{Settings.Tipography.Heading.Type Scale (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}rem"
+          "fontSize": "{Heading.H2 (Desktop)} rem"
         }
       },
       "H3 (Desktop)": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)}*{Settings.Tipography.Heading.Type Scale (Desktop)}rem"
+          "fontSize": "{Heading.H3 (Desktop)} rem"
         }
       },
       "H4 (Desktop)": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)}rem"
+          "fontSize": "{Heading.Base Size (Desktop)} rem"
         }
       },
       "H5 (Desktop)": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)} *-{Settings.Tipography.Heading.Type Scale (Desktop)}"
+          "fontSize": "{Heading.H5 (Desktop)} rem"
         }
       },
       "H6 (Desktop)": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "Settings.Tipography.Heading.Font Family"
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H6 (Desktop)} rem"
         }
       }
     },
@@ -623,6 +655,60 @@
         "$type": "fontSizes",
         "$value": "{Settings.Tipography.Heading.Base Heading Size (Desktop)}/16",
         "$description": "This token is only used for rem conversion"
+      },
+      "H1 (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Desktop)} * (  {Settings.Tipography.Heading.Type Scale (Desktop)} * 3)",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H2 (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Desktop)} * (  {Settings.Tipography.Heading.Type Scale (Desktop)} * 2)",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H3 (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Desktop)} * {Settings.Tipography.Heading.Type Scale (Desktop)}",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H5 (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Desktop)} / {Settings.Tipography.Heading.Type Scale (Desktop)}",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H6 (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Desktop)} / ( {Settings.Tipography.Heading.Type Scale (Desktop)} * 2 )",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H1 (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Mobile)} * (  {Settings.Tipography.Heading.Type Scale (Mobile)} * 3)",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H2 (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Mobile)} * (  {Settings.Tipography.Heading.Type Scale (Mobile)} * 2)",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H3 (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Mobile)} * {Settings.Tipography.Heading.Type Scale (Mobile)}",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H5 (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Mobile)} / {Settings.Tipography.Heading.Type Scale (Mobile)}",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "H6 (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Heading.Base Size (Mobile)} / ( {Settings.Tipography.Heading.Type Scale (Mobile)} * 2 )",
+        "$description": "DO NOT CHANGE: This token is only for calculations."
+      },
+      "LH H1 (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
       }
     }
   },
