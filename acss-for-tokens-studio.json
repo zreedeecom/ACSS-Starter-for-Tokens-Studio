@@ -603,7 +603,7 @@
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)} / {Settings.Tipography.Heading.Type Scale (Desktop)}"
+          "fontSize": "{Heading.Base Size (Desktop)} *-{Settings.Tipography.Heading.Type Scale (Desktop)}"
         }
       },
       "H6 (Desktop)": {
