@@ -211,23 +211,13 @@
           },
           "x-height (Mobile)": {
             "$type": "other",
-            "$value": "8.1485",
-            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile font size (16px)"
-          },
-          "x-height-calc (Mobile)": {
-            "$type": "other",
-            "$value": "{Settings.Tipography.Heading.x-height (Mobile)} * 2 +4",
-            "$description": "This token mimics the calculation set on your ACSS Settings"
+            "$value": "9.16",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile heading size (defaults to 18px)"
           },
           "x-height (Desktop)": {
             "$type": "other",
-            "$value": "10.49805",
-            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base desktop font size (20px)"
-          },
-          "x-height-calc (Desktop)": {
-            "$type": "other",
-            "$value": "{Settings.Tipography.Heading.x-height (Desktop)} * 2 +4",
-            "$description": "This token mimics the calculation set on your ACSS Settings"
+            "$value": "10.18",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base desktop heading size (defaults to: 20px)"
           }
         },
         "Body": {
@@ -235,16 +225,71 @@
             "$type": "other",
             "$value": "Neue Augenblick"
           },
-          "x-height": {
+          "Base Text Size (Mobile)": {
             "$type": "other",
-            "$value": "8.1485",
-            "$description": "Check the x-height of your font at 1rem and set it as close as possible."
+            "$value": "16",
+            "$description": "IMPORTANT: Insert unitless value."
+          },
+          "Base Text Size (Desktop)": {
+            "$type": "other",
+            "$value": "18",
+            "$description": "IMPORTANT: Insert unitless value."
+          },
+          "Type Scale (Mobile)": {
+            "$type": "other",
+            "$value": "1.2"
+          },
+          "Type Scale (Desktop)": {
+            "$type": "other",
+            "$value": "1.333"
+          },
+          "x-height (Mobile)": {
+            "$type": "other",
+            "$value": "8.25",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile body font size (defaults to 16px)"
+          },
+          "x-height (Desktop)": {
+            "$type": "other",
+            "$value": "9.16",
+            "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base desktop body font size (defaults to 18px)"
           }
         },
-        "x-height": {
-          "$type": "other",
-          "$value": "8.1485",
-          "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile font size (16px)"
+        "Heading Color": {
+          "All": {
+            "$type": "other",
+            "$value": "{Neutral.Black}",
+            "$description": "Set this value to a fixed color or reference any other color from the color tab. (for example: {Neutral.Black}).\n\nYou can also specify different colors for any heading level independently using the following tokens.\n\nBy default this token applies to all heading levels."
+          },
+          "H1": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading Color.All}"
+          },
+          "H2": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading Color.All}"
+          },
+          "H3": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading Color.All}"
+          },
+          "H4": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading Color.All}"
+          },
+          "H5": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading Color.All}"
+          },
+          "H6": {
+            "$type": "other",
+            "$value": "{Settings.Tipography.Heading Color.All}"
+          }
+        },
+        "Body Color": {
+          "Text": {
+            "$type": "other",
+            "$value": "{Neutral.Black}"
+          }
         }
       }
     },
@@ -456,6 +501,14 @@
       "Hover": {
         "$type": "color",
         "$value": "hsla({Settings.Color.Neutral.H},{Settings.Color.Neutral.S},50%,{Settings.Color.Neutral.A})"
+      },
+      "Black": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "White": {
+        "$type": "color",
+        "$value": "#ffffff"
       }
     },
     "Semantic": {
@@ -614,7 +667,7 @@
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
           "fontSize": "{Heading.H2 (Desktop)} rem",
-          "lineHeight": "120%"
+          "lineHeight": "{Heading.LH H2 (Desktop)}"
         }
       },
       "H3 (Desktop)": {
@@ -622,14 +675,14 @@
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
           "fontSize": "{Heading.H3 (Desktop)} rem",
-          "lineHeight": "120%"
+          "lineHeight": "{Heading.LH H3 (Desktop)}"
         }
       },
       "H4 (Desktop)": {
         "$type": "typography",
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
-          "fontSize": "{Heading.Base Size (Desktop)} rem",
+          "fontSize": "{Heading.H4 (Desktop)} rem",
           "lineHeight": "{Heading.LH H4 (Desktop)}"
         }
       },
@@ -638,7 +691,7 @@
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
           "fontSize": "{Heading.H5 (Desktop)} rem",
-          "lineHeight": "120%"
+          "lineHeight": "{Heading.LH H5 (Desktop)}"
         }
       },
       "H6 (Desktop)": {
@@ -646,7 +699,55 @@
         "$value": {
           "fontFamily": "{Settings.Tipography.Heading.Font Family}",
           "fontSize": "{Heading.H6 (Desktop)} rem",
-          "lineHeight": "120%"
+          "lineHeight": "{Heading.LH H6 (Desktop)}"
+        }
+      },
+      "H1 (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H1 (Mobile)} rem",
+          "lineHeight": "{Heading.LH H1 (Mobile)}"
+        }
+      },
+      "H2 (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H2 (Mobile)} rem",
+          "lineHeight": "{Heading.LH H2 (Mobile)}"
+        }
+      },
+      "H3 (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H3 (Mobile)} rem",
+          "lineHeight": "{Heading.LH H3 (Mobile)}"
+        }
+      },
+      "H4 (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H4 (Mobile)} rem",
+          "lineHeight": "{Heading.LH H4 (Mobile)}"
+        }
+      },
+      "H5 (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H5 (Mobile)} rem",
+          "lineHeight": "{Heading.LH H5 (Mobile)}"
+        }
+      },
+      "H6 (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{Settings.Tipography.Heading.Font Family}",
+          "fontSize": "{Heading.H6 (Mobile)} rem",
+          "lineHeight": "{Heading.LH H6 (Mobile)}"
         }
       }
     },
@@ -723,11 +824,207 @@
       },
       "LH H1 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "53.7292px"
+        "$value": "{Calculations.X-Heights.x-height H1 (Desktop)} * 2 + 4"
+      },
+      "LH H2 (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H2 (Desktop)} * 2 + 4"
+      },
+      "LH H3 (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H3 (Desktop)} * 2 + 4"
       },
       "LH H4 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Settings.Tipography.Heading.x-height-calc (Desktop)}"
+        "$value": "{Calculations.X-Heights.x-height H4 (Desktop)} * 2 + 4"
+      },
+      "LH H5 (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H5 (Desktop)} * 2 + 4"
+      },
+      "LH H6 (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H6 (Desktop)} * 2 + 4"
+      },
+      "LH H1 (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H1 (Mobile)} * 2 + 4"
+      },
+      "LH H2 (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H2 (Mobile)} * 2 + 4"
+      },
+      "LH H3 (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H3 (Mobile)} * 2 + 4"
+      },
+      "LH H4 (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H4 (Mobile)} * 2 + 4"
+      },
+      "LH H5 (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H5 (Mobile)} * 2 + 4"
+      },
+      "LH H6 (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "{Calculations.X-Heights.x-height H6 (Mobile)} * 2 + 4"
+      }
+    },
+    "Body": {
+      "LH Text XXL (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text XL (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text L (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text M (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text S (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text XS (Desktop)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text XXL (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text XL (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text L (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text M (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text S (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "LH Text XS (Mobile)": {
+        "$type": "lineHeights",
+        "$value": "120%"
+      },
+      "Base Size (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "12"
+      },
+      "Base Size (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "12"
+      },
+      "Text XXL": {
+        "$type": "fontSizes",
+        "$value": "12"
+      }
+    },
+    "Text Color": {
+      "H1": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Heading Color.H1}"
+      },
+      "H2": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Heading Color.H2}"
+      },
+      "H3": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Heading Color.H3}"
+      },
+      "H4": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Heading Color.H4}"
+      },
+      "H5": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Heading Color.H5}"
+      },
+      "H6": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Heading Color.H6}"
+      },
+      "Body": {
+        "$type": "color",
+        "$value": "{Settings.Tipography.Body Color.Text}"
+      }
+    },
+    "Calculations": {
+      "X-Heights": {
+        "x-height H1 (Desktop)": {
+          "$type": "other",
+          "$value": "{Heading.H1 (Desktop)} * 16 * {Settings.Tipography.Heading.x-height (Desktop)} / {Settings.Tipography.Heading.Base Heading Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H2 (Desktop)": {
+          "$type": "other",
+          "$value": "{Heading.H2 (Desktop)} * 16 * {Settings.Tipography.Heading.x-height (Desktop)} / {Settings.Tipography.Heading.Base Heading Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H3 (Desktop)": {
+          "$type": "other",
+          "$value": "{Heading.H3 (Desktop)} * 16 * {Settings.Tipography.Heading.x-height (Desktop)} / {Settings.Tipography.Heading.Base Heading Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H4 (Desktop)": {
+          "$type": "other",
+          "$value": "{Heading.H4 (Desktop)} * 16 * {Settings.Tipography.Heading.x-height (Desktop)} / {Settings.Tipography.Heading.Base Heading Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H5 (Desktop)": {
+          "$type": "other",
+          "$value": "{Heading.H5 (Desktop)} * 16 * {Settings.Tipography.Heading.x-height (Desktop)} / {Settings.Tipography.Heading.Base Heading Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H6 (Desktop)": {
+          "$type": "other",
+          "$value": "{Heading.H6 (Desktop)} * 16 * {Settings.Tipography.Heading.x-height (Desktop)} / {Settings.Tipography.Heading.Base Heading Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H1 (Mobile)": {
+          "$type": "other",
+          "$value": "{Heading.H1 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H2 (Mobile)": {
+          "$type": "other",
+          "$value": "{Heading.H2 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H3 (Mobile)": {
+          "$type": "other",
+          "$value": "{Heading.H3 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H4 (Mobile)": {
+          "$type": "other",
+          "$value": "{Heading.H4 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H5 (Mobile)": {
+          "$type": "other",
+          "$value": "{Heading.H5 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height H6 (Mobile)": {
+          "$type": "other",
+          "$value": "{Heading.H6 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        }
       }
     }
   },
