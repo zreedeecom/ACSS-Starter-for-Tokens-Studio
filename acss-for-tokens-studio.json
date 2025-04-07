@@ -211,7 +211,7 @@
           },
           "x-height (Mobile)": {
             "$type": "other",
-            "$value": "9.16",
+            "$value": "9.29",
             "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile heading size (defaults to 18px)"
           },
           "x-height (Desktop)": {
@@ -245,12 +245,12 @@
           },
           "x-height (Mobile)": {
             "$type": "other",
-            "$value": "8.25",
+            "$value": "8.26",
             "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base mobile body font size (defaults to 16px)"
           },
           "x-height (Desktop)": {
             "$type": "other",
-            "$value": "9.16",
+            "$value": "9.29",
             "$description": "Check the x-height of your font at 1rem and set it as close as possible. This is by default base desktop body font size (defaults to 18px)"
           }
         },
@@ -824,113 +824,183 @@
       },
       "LH H1 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H1 (Desktop)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H1 (Desktop)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H2 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H2 (Desktop)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H2 (Desktop)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H3 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H3 (Desktop)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H3 (Desktop)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H4 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H4 (Desktop)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H4 (Desktop)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H5 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H5 (Desktop)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H5 (Desktop)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H6 (Desktop)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H6 (Desktop)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H6 (Desktop)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H1 (Mobile)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H1 (Mobile)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H1 (Mobile)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H2 (Mobile)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H2 (Mobile)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H2 (Mobile)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H3 (Mobile)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H3 (Mobile)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H3 (Mobile)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H4 (Mobile)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H4 (Mobile)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H4 (Mobile)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H5 (Mobile)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H5 (Mobile)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H5 (Mobile)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH H6 (Mobile)": {
         "$type": "lineHeights",
-        "$value": "{Calculations.X-Heights.x-height H6 (Mobile)} * 2 + 4"
+        "$value": "{Calculations.X-Heights.x-height H6 (Mobile)} * 2 + 4",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       }
     },
     "Body": {
       "LH Text XXL (Desktop)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text XXL (Desktop)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text XL (Desktop)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text XL (Desktop)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text L (Desktop)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text L (Desktop)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text M (Desktop)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text M (Desktop)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text S (Desktop)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text S (Desktop)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text XS (Desktop)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text XS (Desktop)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text XXL (Mobile)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text XXL (Mobile)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text XL (Mobile)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text XL (Mobile)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text L (Mobile)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text L (Mobile)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text M (Mobile)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text M (Mobile)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text S (Mobile)": {
         "$type": "lineHeights",
-        "$value": "120%"
+        "$value": "{Calculations.X-Heights.x-height Text S (Mobile)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "LH Text XS (Mobile)": {
         "$type": "lineHeights",
-        "$value": "120%"
-      },
-      "Base Size (Desktop)": {
-        "$type": "fontSizes",
-        "$value": "12"
+        "$value": "{Calculations.X-Heights.x-height Text XS (Mobile)} * 2 + 6",
+        "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
       },
       "Base Size (Mobile)": {
         "$type": "fontSizes",
-        "$value": "12"
+        "$value": "{Settings.Tipography.Body.Base Text Size (Mobile)} / 16",
+        "$description": "This token is only used for rem conversion"
       },
-      "Text XXL": {
+      "Base Size (Desktop)": {
         "$type": "fontSizes",
-        "$value": "12"
+        "$value": "{Settings.Tipography.Body.Base Text Size (Desktop)} / 16",
+        "$description": "This token is only used for rem conversion"
+      },
+      "Text XXL (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Body.Type Scale (Desktop)} * {Body.Text XL (Desktop)}"
+      },
+      "Text XL (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Body.Type Scale (Desktop)} * {Body.Text L (Desktop)}"
+      },
+      "Text L (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Body.Type Scale (Desktop)} * {Body.Text M (Desktop)}"
+      },
+      "Text M (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Body.Base Size (Desktop)}"
+      },
+      "Text S (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Body.Text M (Desktop)} / {Settings.Tipography.Body.Type Scale (Desktop)}"
+      },
+      "Text XS (Desktop)": {
+        "$type": "fontSizes",
+        "$value": "{Body.Text S (Desktop)} / {Settings.Tipography.Body.Type Scale (Desktop)}"
+      },
+      "Text XXL (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Body.Type Scale (Mobile)} * {Body.Text XL (Mobile)}"
+      },
+      "Text XL (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Body.Type Scale (Mobile)} * {Body.Text L (Mobile)}"
+      },
+      "Text L (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Settings.Tipography.Body.Type Scale (Mobile)} * {Body.Text M (Mobile)}"
+      },
+      "Text M (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Body.Base Size (Mobile)}"
+      },
+      "Text S (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Body.Text M (Mobile)} / {Settings.Tipography.Body.Type Scale (Mobile)}"
+      },
+      "Text XS (Mobile)": {
+        "$type": "fontSizes",
+        "$value": "{Body.Text S (Mobile)} / {Settings.Tipography.Body.Type Scale (Mobile)}"
       }
     },
     "Text Color": {
@@ -1024,6 +1094,164 @@
           "$type": "other",
           "$value": "{Heading.H6 (Mobile)} * 16 * {Settings.Tipography.Heading.x-height (Mobile)} / {Settings.Tipography.Heading.Base Heading Size (Mobile)}",
           "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text XXL (Desktop)": {
+          "$type": "other",
+          "$value": "{Body.Text XXL (Desktop)} * 16 * {Settings.Tipography.Body.x-height (Desktop)} / {Settings.Tipography.Body.Base Text Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text XL (Desktop)": {
+          "$type": "other",
+          "$value": "{Body.Text XL (Desktop)} * 16 * {Settings.Tipography.Body.x-height (Desktop)} / {Settings.Tipography.Body.Base Text Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text L (Desktop)": {
+          "$type": "other",
+          "$value": "{Body.Text L (Desktop)} * 16 * {Settings.Tipography.Body.x-height (Desktop)} / {Settings.Tipography.Body.Base Text Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text M (Desktop)": {
+          "$type": "other",
+          "$value": "{Body.Text M (Desktop)} * 16 * {Settings.Tipography.Body.x-height (Desktop)} / {Settings.Tipography.Body.Base Text Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text S (Desktop)": {
+          "$type": "other",
+          "$value": "{Body.Text S (Desktop)} * 16 * {Settings.Tipography.Body.x-height (Desktop)} / {Settings.Tipography.Body.Base Text Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text XS (Desktop)": {
+          "$type": "other",
+          "$value": "{Body.Text XS (Desktop)} * 16 * {Settings.Tipography.Body.x-height (Desktop)} / {Settings.Tipography.Body.Base Text Size (Desktop)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text XXL (Mobile)": {
+          "$type": "other",
+          "$value": "{Body.Text XXL (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text XL (Mobile)": {
+          "$type": "other",
+          "$value": "{Body.Text XL (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text L (Mobile)": {
+          "$type": "other",
+          "$value": "{Body.Text L (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text M (Mobile)": {
+          "$type": "other",
+          "$value": "{Body.Text M (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text S (Mobile)": {
+          "$type": "other",
+          "$value": "{Body.Text S (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        },
+        "x-height Text XS (Mobile)": {
+          "$type": "other",
+          "$value": "{Body.Text XS (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
+          "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
+        }
+      }
+    },
+    "Body Text": {
+      "Text XXL (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text XXL (Desktop)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text XXL (Desktop)}"
+        }
+      },
+      "Text XL (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text XL (Desktop)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text XL (Desktop)}"
+        }
+      },
+      "Text L (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text L (Desktop)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text L (Desktop)}"
+        }
+      },
+      "Text M (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text M (Desktop)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text M (Desktop)}"
+        }
+      },
+      "Text S (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text S (Desktop)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text S (Desktop)}"
+        }
+      },
+      "Text XS (Desktop)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text XS (Desktop)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text XS (Desktop)}"
+        }
+      },
+      "Text XXL (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text XXL (Mobile)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text XXL (Mobile)}"
+        }
+      },
+      "Text XL (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text XL (Mobile)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text XL (Mobile)}"
+        }
+      },
+      "Text L (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text L (Mobile)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text L (Mobile)}"
+        }
+      },
+      "Text M (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text M (Mobile)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text M (Mobile)}"
+        }
+      },
+      "Text S (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text S (Mobile)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text S (Mobile)}"
+        }
+      },
+      "Text XS (Mobile)": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Body.Text XS (Mobile)} rem",
+          "fontFamily": "{Settings.Tipography.Body.Font Family}",
+          "lineHeight": "{Body.LH Text XS (Mobile)}"
         }
       }
     }
