@@ -508,7 +508,7 @@
       },
       "White": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#FFFFFF"
       }
     },
     "Semantic": {
