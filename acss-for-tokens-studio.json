@@ -1155,6 +1155,128 @@
           "$value": "{Body.Text XS (Mobile)} * 16 * {Settings.Tipography.Body.x-height (Mobile)} / {Settings.Tipography.Body.Base Text Size (Mobile)}",
           "$description": "DO NOT TOUCH. These tokens are used to calculate the whole array of line heights. They may differ a bit from the values you see on the browser but will still be quite accurate."
         }
+      },
+      "Pixel Values": {
+        "H1 D FS": {
+          "$type": "other",
+          "$value": "{Heading.H1 (Desktop)} * 16px",
+          "$description": "Font Size for H1 on Desktop"
+        },
+        "H2 D FS": {
+          "$type": "other",
+          "$value": "{Heading.H2 (Desktop)} * 16px",
+          "$description": "Font Size for H2 on Desktop"
+        },
+        "H3 D FS": {
+          "$type": "other",
+          "$value": "{Heading.H3 (Desktop)} * 16px",
+          "$description": "Font Size for H3 on Desktop"
+        },
+        "H4 D FS": {
+          "$type": "other",
+          "$value": "{Heading.H4 (Desktop)} * 16px",
+          "$description": "Font Size for H4 on Desktop"
+        },
+        "H5 D FS": {
+          "$type": "other",
+          "$value": "{Heading.H5 (Desktop)} * 16px",
+          "$description": "Font Size for H5 on Desktop"
+        },
+        "H6 D FS": {
+          "$type": "other",
+          "$value": "{Heading.H6 (Desktop)} * 16px",
+          "$description": "Font Size for H6 on Desktop"
+        },
+        "H1 M FS": {
+          "$type": "other",
+          "$value": "{Heading.H1 (Mobile)} * 16px",
+          "$description": "Font Size for H1 on Mobile"
+        },
+        "H2 M FS": {
+          "$type": "other",
+          "$value": "{Heading.H2 (Mobile)} * 16px",
+          "$description": "Font Size for H2 on Mobile"
+        },
+        "H3 M FS": {
+          "$type": "other",
+          "$value": "{Heading.H3 (Mobile)} * 16px",
+          "$description": "Font Size for H3 on Mobile"
+        },
+        "H4 M FS": {
+          "$type": "other",
+          "$value": "{Heading.H4 (Mobile)} * 16px",
+          "$description": "Font Size for H4 on Mobile"
+        },
+        "H5 M FS": {
+          "$type": "other",
+          "$value": "{Heading.H5 (Mobile)} * 16px",
+          "$description": "Font Size for H5 on Mobile"
+        },
+        "H6 M FS": {
+          "$type": "other",
+          "$value": "{Heading.H6 (Mobile)} * 16px",
+          "$description": "Font Size for H6 on Mobile"
+        },
+        "Text XXL D FS": {
+          "$type": "other",
+          "$value": "{Body.Text XXL (Desktop)} * 16px",
+          "$description": "Font Size for Text XXL on Desktop"
+        },
+        "Text XL D FS": {
+          "$type": "other",
+          "$value": "{Body.Text XL (Desktop)} * 16px",
+          "$description": "Font Size for Text XL on Desktop"
+        },
+        "Text L D FS": {
+          "$type": "other",
+          "$value": "{Body.Text L (Desktop)} * 16px",
+          "$description": "Font Size for Text L on Desktop"
+        },
+        "Text M D FS": {
+          "$type": "other",
+          "$value": "{Body.Text M (Desktop)} * 16px",
+          "$description": "Font Size for Text M on Desktop"
+        },
+        "Text S D FS": {
+          "$type": "other",
+          "$value": "{Body.Text S (Desktop)} * 16px",
+          "$description": "Font Size for Text S on Desktop"
+        },
+        "Text XS D FS": {
+          "$type": "other",
+          "$value": "{Body.Text XS (Desktop)} * 16px",
+          "$description": "Font Size for Text XS on Desktop"
+        },
+        "Text XXL M FS": {
+          "$type": "other",
+          "$value": "{Body.Text XXL (Mobile)} * 16px",
+          "$description": "Font Size for Text XXL on Mobile"
+        },
+        "Text XL M FS": {
+          "$type": "other",
+          "$value": "{Body.Text XL (Mobile)} * 16px",
+          "$description": "Font Size for Text XL on Mobile"
+        },
+        "Text L M FS": {
+          "$type": "other",
+          "$value": "{Body.Text L (Mobile)} * 16px",
+          "$description": "Font Size for Text L on Mobile"
+        },
+        "Text M M FS": {
+          "$type": "other",
+          "$value": "{Body.Text M (Mobile)} * 16px",
+          "$description": "Font Size for Text M on Mobile"
+        },
+        "Text S M FS": {
+          "$type": "other",
+          "$value": "{Body.Text S (Mobile)} * 16px",
+          "$description": "Font Size for Text S on Mobile"
+        },
+        "Text XS M FS": {
+          "$type": "other",
+          "$value": "{Body.Text XS (Mobile)} * 16px",
+          "$description": "Font Size for Text XS on Mobile"
+        }
       }
     },
     "Body Text": {
